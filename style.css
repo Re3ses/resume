@@ -1,16 +1,32 @@
 * {
     margin: 0;
     padding: 0;
-    color: black;
-    font-family: 'Roboto', 'Sans-serif';
+    font-family: 'Roboto', sans-serif;
+    color: rgb(100, 100, 100);
 }
 
 h1 {
-    font-family: 'Montserrat', 'sans-serif';
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(45, 45, 45);
+}
+
+h3 {
+    color: #8082c7;
+    font-family: 'Raleway', sans-serif;
+    margin: 5px 0;
 }
 
 ul, ol {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 300px;
+    height: 300px; 
 }
 
 body {
@@ -48,18 +64,19 @@ nav p {
 }
 
 .nav-name {
+    color: rgb(0, 0, 0);
     margin: 30px;
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: 800;
 }
 
 .contact-butt {
+    color: rgb(36, 36, 36);
     margin: 50px;
-    text-decoration: none;
 }
 
 .contact-butt:hover {
-    color: #6c6c6c;
+    color: rgb(100, 100, 100);
 }
 
 .hero {
@@ -70,27 +87,83 @@ nav p {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.33) inset;
 }
 
-.hero-text {
-    margin: 0 0 0 100px;
-    width: 900px;
-    font-family: 'Montserrat', 'sans-serif';
+    .hero-text {
+        margin: 0 0 0 100px;
+        width: 900px;
+        font-family: 'Montserrat', 'sans-serif';
+    }
+
+    .hero-text h1 {
+        font-weight: 800;
+        font-size: 3em;
+    }
+
+    .hero-text p {
+        margin: 5px;
+        font-size: 1.3em;
+    }
+
+    .pfp {
+        margin: auto;
+        height: 680px;
+        width: auto;
+    }
+
+
+.self-bg {
+    width: 100vw;
+    height: 50vh;
+    margin: 50px 100px 25px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
-.hero-text h1 {
-    font-weight: 900;
-    font-size: 3em;
+.bg {
+    max-width: 50%;
 }
 
-.hero-text p {
-    margin: 5px;
-    font-size: 1.3em;
+.contacts {
+    height: 30px;
+    width: 100%;
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.pfp {
-    margin: auto;
-    height: 680px;
-    width: auto;
+    .contacts p {
+        width: 200px;
+        color: #959595;
+        font-size: 1em;
+    }
+
+.skills {
+    /* background-color: rgb(75, 66, 97); */
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skills ul {
+    width: 200px;
+}
+
+.skills h3 {
+    margin: 5px 0 15px 0;
+}
+
+.skills li {
+    margin: 0 10px;
+}
+
+/* Contact page */
+
+.contact-nav {
+    position: relative;
 }
